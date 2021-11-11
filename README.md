@@ -1,6 +1,17 @@
 # MDM
 This is the model file written by Xing Wang (xingwang1990@gmail.com), for our study https://arxiv.org/abs/2009.11287. Please cite this paper when you use them. 
 
+UFO model files for Madgraph.
+f2d_n-plet_UFO: Dirac SU(2) doublet - neutral component chiN (chiN~), singly charged chip1 (chip1~)
+f3m_n-plet_UFO: Majorana SU(2) triplet - neutral component chiN, singly charged chip1 (chip1~)
+f5m_n-plet_UFO: Majorana SU(2) 5-plet - neutral component chiN, singly charged chip1 (chip1~), doubly charged chip2 (chip2~)
+f7m_n-plet_UFO: Majorana SU(2) 7-plet - neutral component chiN, singly charged chip1 (chip1~), doubly charged chip2 (chip2~), triply charged chip3 (chip3~)
+
+---------------------------------------------------
+Instructions
+---------------------------------------------------
+
+
 As for the process generation, we used photon-initiated processes together with the photon PDF based on Madgraph implementation with the following modifications: 
 - Madgraph supports photon PDF from the initial electron or positron by setting lpp1 or lpp2 = 3, and the formula is described in arXiv:hep-ph/9310350. To have the muon version, you need to modify "Source/PDF/PhotonFlux.f" in your work directory and replace the electron mass with muon mass. 
 - And for scale (which is the integration bound of q^2 as in hep-ph/9310350,up to a minus sign that flips what they call min/max), you can use the Madgraph built-in dynamical scale with fixed_fac_scale=False and dynamical_scale_choice=4, which uses sqrt(s_hat) as the scale; and then set scalefact=0.5 to make it down to sqrt(shat)/2.
