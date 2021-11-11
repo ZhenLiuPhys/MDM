@@ -1,5 +1,5 @@
 # MDM
-This is the model file written by Xing Wang, for our study https://arxiv.org/abs/2009.11287. Please cite this paper when you use them. 
+This is the model file written by Xing Wang (xingwang1990@gmail.com), for our study https://arxiv.org/abs/2009.11287. Please cite this paper when you use them. 
 
 As for the process generation, we used photon-initiated processes together with the photon PDF based on Madgraph implementation with the following modifications: 
 - Madgraph supports photon PDF from the initial electron or positron by setting lpp1 or lpp2 = 3, and the formula is described in arXiv:hep-ph/9310350. To have the muon version, you need to modify "Source/PDF/PhotonFlux.f" in your work directory and replace the electron mass with muon mass. 
