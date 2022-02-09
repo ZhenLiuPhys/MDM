@@ -1,5 +1,6 @@
 # MDM
 This is the model file written by Xing Wang (xingwang1990@gmail.com), for our study https://arxiv.org/abs/2009.11287. Please cite this paper when you use them. 
+If you have any questions, please contact Xing Wang (xingwang1990ATgmail.com), and Zhen Liu (zliuphysATumn.edu)
 
 UFO model files for Madgraph.
 f2d_n-plet_UFO: Dirac SU(2) doublet - neutral component chiN (chiN~), singly charged chip1 (chip1~)
